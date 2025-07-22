@@ -1,17 +1,23 @@
+import { getDictionary } from "../../../dictionaries";
 import { notFound } from "next/navigation";
 
 export async function generateStaticParams() {
   const res = await fetch("https://jsonplaceholder.typicode.com/posts");
   const posts = await res.json();
 
-  return posts.map((post) => ({
-    id: post.id.toString(),
-  }));
+  return ["en", "uk"].flatMap((locale) =>
+    posts.map((post) => ({
+      locale,
+      id: post.id.toString(),
+    }))
+  );
 }
 
 export default async function PostPage(props) {
   const params = await props.params;
-  const { id } = params;
+  const { id, locale } = params;
+
+  const dict = getDictionary(locale);
 
   const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
 
@@ -27,7 +33,7 @@ export default async function PostPage(props) {
 
   return (
     <div>
-      <h1>{post.title}</h1>
+      <h1>{dict.posts?.title ?? post.title}</h1>
       <p>{post.body}</p>
     </div>
   );
