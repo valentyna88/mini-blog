@@ -1,0 +1,13 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About"
+  },
+  "posts": {
+    "title": "Posts",
+    "read_more": "Read more"
+  },
+  "footer": {
+    "copyright": "Mini Blog"
+  }
+}
