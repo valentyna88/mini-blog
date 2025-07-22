@@ -1,0 +1,29 @@
+.switcher {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin: 8px 0 20px 0;
+}
+
+.langBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 15px;
+  border-radius: 20px;
+  border: none;
+  background: #f6f8fa;
+  font-size: 1rem;
+  color: #222;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.langBtn:disabled,
+.active {
+  background: linear-gradient(90deg, #ececec 0%, #e0e0e0 100%);
+  font-weight: bold;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+  outline: 2px solid #0070f3;
+  cursor: default;
+}
