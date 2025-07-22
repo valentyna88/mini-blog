@@ -1,3 +1,4 @@
+import LanguageSwitcher from "../components/LanguageSwitcher/LanguageSwitcher";
 import { getDictionary } from "../dictionaries";
 import Link from "next/link";
 
@@ -23,6 +24,7 @@ export default async function LocaleLayout({ children, params }) {
             {dict.nav.about}
           </Link>
         </nav>
+        <LanguageSwitcher />
       </header>
       <main style={{ minHeight: "70vh", padding: "16px" }}>{children}</main>
       <footer
