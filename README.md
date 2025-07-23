@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mini Blog
+
+A multilingual mini-blog built with Next.js 15, demonstrating SSG/SSR, i18n, error handling, and a clean UI.
+
+## Features
+
+- 🌐 **Internationalization (i18n):** English & Ukrainian, easy to add more languages
+- ⚡ **Static Generation (SSG)** for posts, **SSR** for individual post pages
+- 📰 **Posts:** Fetches data from [JSONPlaceholder](https://jsonplaceholder.typicode.com/)
+- 🗂️ **Routing:** Main (`/`), About (`/about`), Posts (`/posts/[id]`)
+- 🚦 **Error Handling:** Custom 404, error, and loading pages
+- 🌙 **Clean, adaptive UI:** Responsive, modern styles with CSS Modules
+- 🏗️ **Modular structure:** Reusable components (Header, Footer, Loader, Language Switcher)
+- 🔥 **Loader/Spinner** on page transitions and data loading
+
+## Tech Stack
+
+- [Next.js 15 (App Router)](https://nextjs.org/docs/app)
+- CSS Modules
+- [JSONPlaceholder API](https://jsonplaceholder.typicode.com/)
 
 ## Getting Started
 
-First, run the development server:
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/valentyna88/mini-blog.git
+cd mini-blog
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+# or
+pnpm install
+```
+
+### 3. Run the development server
 
 ```bash
 npm run dev
 # or
-yarn dev
-# or
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Use the language switcher in the header to change languages.
+- Click "Read more" to view a full post.
+- The About page contains team/project info and is statically generated.
+- Error, loading, and not-found pages are handled via dedicated components.
 
-## Learn More
+## Author
 
-To learn more about Next.js, take a look at the following resources:
+- [Valentyna Taranchuk](https://github.com/valentyna88)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is for demo/testing purposes only.
