@@ -23,7 +23,7 @@
 }
 
 .item {
-  background: #fff;
+  /* background: #fff; */
   border-radius: 16px;
   box-shadow: 0 4px 24px rgba(40, 40, 80, 0.08);
   border: 1px solid #eee;

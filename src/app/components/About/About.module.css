@@ -2,12 +2,10 @@
   max-width: 640px;
   margin: 48px auto;
   padding: 32px 24px;
-  background: #fff;
   border-radius: 18px;
   box-shadow: 0 4px 24px rgba(40, 40, 80, 0.08);
   border: 1px solid #eee;
 }
-
 .title {
   font-size: 2.1rem;
   margin-bottom: 18px;
@@ -15,7 +13,6 @@
   letter-spacing: -1px;
   color: #262751;
 }
-
 .desc {
   font-size: 1.12rem;
   margin-bottom: 36px;
