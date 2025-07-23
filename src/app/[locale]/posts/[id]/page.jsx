@@ -1,5 +1,6 @@
 import { getDictionary } from "../../../dictionaries";
 import { notFound } from "next/navigation";
+import Post from "@/app/components/Post/Post";
 
 export async function generateStaticParams() {
   const res = await fetch("https://jsonplaceholder.typicode.com/posts");
@@ -31,10 +32,5 @@ export default async function PostPage(props) {
     notFound();
   }
 
-  return (
-    <div>
-      <h1>{dict.posts?.title ?? post.title}</h1>
-      <p>{post.body}</p>
-    </div>
-  );
+  return <Post post={post} dict={dict} />;
 }
