@@ -9,5 +9,17 @@
   },
   "footer": {
     "copyright": "Mini Blog"
+  },
+  "about": {
+    "title": "About Our Team",
+    "desc": "Welcome to Mini Blog! We are a passionate group of developers and content creators who believe in the power of sharing knowledge and inspiring others. Our mission is to make learning accessible, clear, and enjoyable for everyone, regardless of their background or experience.",
+    "team": "Meet Our Team:",
+    "names": [
+      "Valentyna — Frontend Developer & Founder",
+      "Andrii — UI/UX Designer",
+      "Olena — Content Manager",
+      "Mykola — QA Engineer"
+    ],
+    "note": "We started this project as a way to learn new technologies, support each other, and build something meaningful. Every article, feature, and improvement is made with love and care. Thank you for being part of our journey!"
   }
 }
