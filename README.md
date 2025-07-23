@@ -2,6 +2,14 @@
 
 A multilingual mini-blog built with Next.js 15, demonstrating SSG/SSR, i18n, error handling, and a clean UI.
 
+**Live demo:**  
+[https://mini-blog-nine-liart.vercel.app](https://mini-blog-nine-liart.vercel.app)
+
+**Repository:**  
+[https://github.com/valentyna88/mini-blog](https://github.com/valentyna88/mini-blog)
+
+---
+
 ## Features
 
 - 🌐 **Internationalization (i18n):** English & Ukrainian, easy to add more languages
