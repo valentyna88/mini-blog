@@ -25,10 +25,15 @@
   transition: color 0.2s;
 }
 
-.link:hover,
-.link.active {
+.link:hover {
   color: #975be1;
-  text-decoration: underline;
+}
+
+.active {
+  color: #976be1;
+  font-weight: bold;
+  border-bottom: 2px solid #976be1;
+  transition: 0.15s;
 }
 
 .switcher {
