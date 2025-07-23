@@ -1,8 +1,6 @@
 .switcher {
   display: flex;
   gap: 12px;
-  align-items: center;
-  margin: 8px 0 20px 0;
 }
 
 .langBtn {
