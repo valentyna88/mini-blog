@@ -18,7 +18,7 @@ export default async function LocaleLayout({ children, params }) {
   return (
     <>
       <Header dict={dict} locale={locale} />
-      <main style={{ minHeight: "70vh", padding: "16px" }}>{children}</main>
+      <main>{children}</main>
       <Footer dict={dict} />
     </>
   );
