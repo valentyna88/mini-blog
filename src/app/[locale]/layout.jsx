@@ -1,6 +1,6 @@
-import LanguageSwitcher from "../components/LanguageSwitcher/LanguageSwitcher";
+import Footer from "../components/Footer/Footer";
+import Header from "../components/Header/Header";
 import { getDictionary } from "../dictionaries";
-import Link from "next/link";
 
 export const metadata = {
   title: "Mini Blog",
@@ -17,26 +17,9 @@ export default async function LocaleLayout({ children, params }) {
 
   return (
     <>
-      <header style={{ padding: "16px", borderBottom: "1px solid #eee" }}>
-        <nav>
-          <Link href={`/${locale}`}>{dict.nav.home}</Link>
-          <Link href={`/${locale}/about`} style={{ marginLeft: "16px" }}>
-            {dict.nav.about}
-          </Link>
-        </nav>
-        <LanguageSwitcher />
-      </header>
+      <Header dict={dict} locale={locale} />
       <main style={{ minHeight: "70vh", padding: "16px" }}>{children}</main>
-      <footer
-        style={{
-          padding: "16px",
-          borderTop: "1px solid #eee",
-          textAlign: "center",
-        }}
-      >
-        &copy; {new Date().getFullYear()} Valentyna Taranchuk{" "}
-        {dict.footer.copyright}
-      </footer>
+      <Footer dict={dict} />
     </>
   );
 }
